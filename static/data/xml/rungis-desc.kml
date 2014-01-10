@@ -3,6 +3,25 @@
 <Document>
     <name>KML file with polygon for bird species range</name>
     <description>Source various books and websites</description>
+	<Schema name="tl_2013_01_place_utf8" id="tl_2013_01_place_utf8">
+	<SimpleField name="Name" type="string"></SimpleField>
+	<SimpleField name="Description" type="string"></SimpleField>
+	<SimpleField name="STATEFP" type="string"></SimpleField>
+	<SimpleField name="PLACEFP" type="string"></SimpleField>
+	<SimpleField name="PLACENS" type="string"></SimpleField>
+	<SimpleField name="GEOID" type="string"></SimpleField>
+	<SimpleField name="NAMELSAD" type="string"></SimpleField>
+	<SimpleField name="LSAD" type="string"></SimpleField>
+	<SimpleField name="CLASSFP" type="string"></SimpleField>
+	<SimpleField name="PCICBSA" type="string"></SimpleField>
+	<SimpleField name="PCINECTA" type="string"></SimpleField>
+	<SimpleField name="MTFCC" type="string"></SimpleField>
+	<SimpleField name="FUNCSTAT" type="string"></SimpleField>
+	<SimpleField name="ALAND" type="float"></SimpleField>
+	<SimpleField name="AWATER" type="float"></SimpleField>
+	<SimpleField name="INTPTLAT" type="string"></SimpleField>
+	<SimpleField name="INTPTLON" type="string"></SimpleField>
+</Schema>
     <Style id="rangecolour">
         <LineStyle>
             <color>660000FF</color>
@@ -22,6 +41,25 @@
         <name>Rungis</name>
         <description>Here is a KML example</description>
         <styleUrl>#rangecolour</styleUrl>
+			<name>Fort Payne</name>
+	<ExtendedData><SchemaData schemaUrl="#tl_2013_01_place_utf8">
+		<SimpleData name="Name">Fort Payne</SimpleData>
+		<SimpleData name="STATEFP">01</SimpleData>
+		<SimpleData name="PLACEFP">27616</SimpleData>
+		<SimpleData name="PLACENS">02403645</SimpleData>
+		<SimpleData name="GEOID">0127616</SimpleData>
+		<SimpleData name="NAMELSAD">Fort Payne city</SimpleData>
+		<SimpleData name="LSAD">25</SimpleData>
+		<SimpleData name="CLASSFP">C1</SimpleData>
+		<SimpleData name="PCICBSA">N</SimpleData>
+		<SimpleData name="PCINECTA">N</SimpleData>
+		<SimpleData name="MTFCC">G4110</SimpleData>
+		<SimpleData name="FUNCSTAT">A</SimpleData>
+		<SimpleData name="ALAND">147041425</SimpleData>
+		<SimpleData name="AWATER">921205</SimpleData>
+		<SimpleData name="INTPTLAT">+34.4573293</SimpleData>
+		<SimpleData name="INTPTLON">-085.6894469</SimpleData>
+	</SchemaData></ExtendedData>
         <Polygon>
 	    <description>A plolygon</description>
             <tessellate>1</tessellate>
